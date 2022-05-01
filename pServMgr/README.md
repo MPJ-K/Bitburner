@@ -4,4 +4,5 @@ It handles automatic purchasing or removal in the desired amount and/or RAM conf
 You can interact with it through the prompts it puts out and the information printed to the terminal.  
 It requires the helper script `pServerAutoPurchase.js` to work properly.
 
-This is one of my earlier scripts and therefore it may be a bit messy.
+This is one of my earlier scripts and therefore it may be a bit messy.  
+The in-game folder names are also hard-coded so keep that in mind if you are trying to use this script.
