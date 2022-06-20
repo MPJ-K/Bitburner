@@ -18,6 +18,9 @@ export async function main(ns) {
 		else {
 			ns.tprint("Located the target hostname via the following path:");
 			ns.tprint(path);
+			ns.tprint("Information about this target:");
+			const info = ns.getServer(target);
+			ns.tprint(`Root access: ${info.hasAdminRights} | Ports required: ${info.numOpenPortsRequired} | Hacking skill required: ${info.requiredHackingSkill} (currently ${ns.getHackingLevel()})`);
 		}
 	}
 
