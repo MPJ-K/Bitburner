@@ -7,12 +7,12 @@ export async function main(ns) {
 	 * your hashes.
 	**/
 	if (isNaN(ns.args[0])) {
-		ns.tprint("Error: Sell factor is NaN");
+		ns.tprint("ERROR: Sell factor is NaN");
 		return;
 	}
 	const sellAmt = parseFloat(ns.args[0]);
 	if (sellAmt < 0 || sellAmt > 1) {
-		ns.tprint("Error: Sell factor must be a value from 0 to 1");
+		ns.tprint("ERROR: Sell factor must be a value from 0 to 1");
 		return;
 	}
 	const hashToMoney = "Sell for Money";
